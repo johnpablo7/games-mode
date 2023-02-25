@@ -2,7 +2,7 @@ import { SVGProps } from "react";
 
 const LogoIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
-    width={174}
+    width={183}
     height={32}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
