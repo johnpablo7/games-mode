@@ -6,6 +6,9 @@ import { Library } from "../components/pages/store/Library";
 import { Friends } from "../components/pages/store/Friends";
 import { Live } from "../components/pages/store/Live";
 import { NotFound } from "../components/pages/NotFound";
+import { Downloads } from "../components/pages/store/Downloads";
+import { Settings } from "../components/pages/store/Settings";
+import { Perfil } from "../components/pages/store/Perfil";
 
 export const App = () => {
   return (
@@ -17,6 +20,9 @@ export const App = () => {
           <Route path="/library" element={<Library />} />
           <Route path="/friends" element={<Friends />} />
           <Route path="/live" element={<Live />} />
+          <Route path="/downloads" element={<Downloads />} />
+          <Route path="/settings" element={<Settings />} />
+          <Route path="/perfil" element={<Perfil />} />
 
           <Route path="*" element={<NotFound />} />
         </Route>
