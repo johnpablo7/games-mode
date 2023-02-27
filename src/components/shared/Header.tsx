@@ -6,8 +6,8 @@ import clsx from "clsx";
 
 export const Header = () => {
   return (
-    <div className="bg-woodsmoke sticky top-0 lg:pl-72 w-full flex flex-col md:flex-row items-center justify-between gap-6 lg:pt-14 p-5 md:p-11 lg:p-8">
-      <nav className="order-1 lg:order-none w-full">
+    <div className="bg-woodsmoke sticky top-0 lg:pl-72 w-full flex flex-col md:flex-row items-center justify-between gap-6 lg:pt-12 p-5 md:p-11 lg:py-8 lg:pr-8 z-40">
+      <nav className="order-1 lg:order-none w-full lg:pl-2">
         <ul className="flex items-center justify-self-start gap-3">
           {buttons.map((list) => (
             <li key={list.id} className="">
@@ -15,7 +15,7 @@ export const Header = () => {
                 to={list.path}
                 className={({ isActive }) =>
                   clsx(
-                    "py-2 px-4 rounded-full",
+                    "py-2 px-4 rounded-full lg:text-lg",
                     isActive
                       ? "bg-[#0061FD] text-white"
                       : "text-[#EBEBF5] opacity-60"
@@ -28,9 +28,9 @@ export const Header = () => {
           ))}
         </ul>
       </nav>
-      <div className="flex items-center justify-center gap-6 md:pr-0 lg:pr-4">
+      <div className="flex items-center justify-center gap-6 md:pr-0">
         <NotificationIcon className="text-[#EBEBF5] opacity-60 fill-current" />
-        <form action="" className="relative w-80 md:w-80 lg:w-96">
+        <form action="" className="relative w-80">
           <RiSearchLine className="absolute text-[#EBEBF5] opacity-60 top-3 left-2" />
           <input
             type="text"

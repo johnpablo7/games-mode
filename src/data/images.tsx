@@ -29,11 +29,11 @@ export const images = [
     name: "Yakuza: Like a Dragon",
     img: "/images/yakuza.png",
   },
-  // {
-  //   id: "7",
-  //   name: "Warhammer: Vermintide 2",
-  //   img: "/images/warhammer.png",
-  // },
+  {
+    id: "7",
+    name: "Warhammer: Vermintide 2",
+    img: "/images/warhammer.png",
+  },
 ];
 
 export const imagesonsale = [

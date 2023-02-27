@@ -37,7 +37,7 @@ export const Sidebar = () => {
               <li key={link.id}>
                 <NavLink
                   to={link.path}
-                  className="text-[#EBEBF5] opacity-60 flex items-start gap-4 hover:bg-[#202020] hover:text-white py-4 px-8 rounded-xl hover:opacity-100 fill-current"
+                  className="text-[#EBEBF5] opacity-60 flex items-center gap-4 hover:bg-[#202020] hover:text-white text-lg py-4 px-8 rounded-xl hover:opacity-100 fill-current"
                 >
                   {link.icon}
                   {link.name}
@@ -53,7 +53,7 @@ export const Sidebar = () => {
               <li key={link.id}>
                 <NavLink
                   to={link.path}
-                  className="text-[#EBEBF5] opacity-60 flex items-start gap-4 hover:bg-[#202020] hover:text-white py-4 px-8 rounded-xl hover:opacity-100 fill-current"
+                  className="text-[#EBEBF5] opacity-60 flex items-start gap-4 hover:bg-[#202020] hover:text-white text-xl py-4 px-8 rounded-xl hover:opacity-100 fill-current"
                 >
                   {link.icon}
                   {link.name}
@@ -73,7 +73,7 @@ export const Sidebar = () => {
       {/* Btn menu movil */}
       <button
         onClick={toggleMenu}
-        className="lg:hidden bg-blue-600 text-white fixed bottom-8 right-6 p-2 text-lg rounded-full z-50"
+        className="lg:hidden bg-[#0061FD] text-white fixed bottom-8 right-6 p-2 text-lg rounded-full z-50"
       >
         {showMobileMenu ? <RiCloseLine /> : <RiMenu3Fill />}
       </button>
