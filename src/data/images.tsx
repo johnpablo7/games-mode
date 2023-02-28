@@ -72,13 +72,13 @@ export const imagesonsale = [
     price: "$23.99",
     img: "/images/hitman.png",
   },
-  // {
-  //   id: "6",
-  //   name: "Valheim",
-  //   mode: "Action Games",
-  //   price: "$8.15",
-  //   img: "/images/valheim.png",
-  // },
+  {
+    id: "6",
+    name: "Valheim",
+    mode: "Action Games",
+    price: "$8.15",
+    img: "/images/valheim.png",
+  },
   // {
   //   id: "7",
   //   name: "BIOSHOCK: THE COLLEC...",

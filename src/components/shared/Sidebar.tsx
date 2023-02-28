@@ -37,7 +37,7 @@ export const Sidebar = () => {
               <li key={link.id}>
                 <NavLink
                   to={link.path}
-                  className="text-[#EBEBF5] opacity-60 flex items-center gap-4 hover:bg-[#202020] hover:text-white text-lg py-4 px-8 rounded-xl hover:opacity-100 fill-current"
+                  className="text-[#EBEBF5] opacity-60 flex items-center gap-4 hover:bg-[#202020] hover:text-white text-xl py-4 px-8 rounded-xl hover:opacity-100 fill-current"
                 >
                   {link.icon}
                   {link.name}
@@ -65,7 +65,7 @@ export const Sidebar = () => {
               className="text-[#EBEBF5] opacity-60 flex items-start gap-4 hover:bg-[#202020] hover:text-white py-4 px-8 rounded-xl hover:opacity-100 fill-current"
             >
               <img src={profile} />
-              <span>Tung Tran</span>
+              <p className="text-xl">Tung Tran</p>
             </NavLink>
           </ul>
         </div>
