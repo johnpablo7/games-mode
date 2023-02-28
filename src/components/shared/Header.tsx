@@ -28,13 +28,13 @@ export const Header = () => {
           ))}
         </ul>
       </nav>
-      <div className="flex items-center justify-center gap-6 md:pr-0">
+      <div className="flex items-center justify-center gap-5 lg:gap-6 md:pr-0">
         <NotificationIcon className="text-[#EBEBF5] opacity-60 fill-current" />
         <form action="" className="relative w-80">
-          <RiSearchLine className="absolute text-[#EBEBF5] opacity-60 top-4 left-4 text-xl" />
+          <RiSearchLine className="absolute text-[#EBEBF5] opacity-60 top-2 lg:top-4 left-4 text-xl lg:text-xl" />
           <input
             type="text"
-            className="bg-[#202020] outline-none py-3 pl-12 pr-4 rounded-3xl text-xl text-[#EBEBF5] text-opacity-60 w-full"
+            className="bg-[#202020] outline-none py-1 lg:py-3 pl-12 pr-4 rounded-3xl text-lg lg:text-xl text-[#EBEBF5] w-full"
             placeholder="Search"
           />
         </form>

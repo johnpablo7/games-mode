@@ -22,7 +22,7 @@ export const Main = () => {
             <h2 className="text-sm md:text-xl lg:text-2xl text-white font-extrabold mb-2 lg:mb-8">
               Season 28, Rites of Sanctuary, is now available
             </h2>
-            <button className="flex items-center gap-3 bg-[#0061FD] text-white py-1 px-2 md:py-2 md:px-4 lg:py-4 lg:px-8 rounded-xl text-xs md:text-lg lg:text-lg">
+            <button className="flex items-center gap-1 lg:gap-3 bg-[#0061FD] text-white py-1 px-2 md:py-2 md:px-4 lg:py-4 lg:px-8 rounded-xl text-xs md:text-lg lg:text-lg">
               Play for free
               <ArrowIcon className="fill-current" />
             </button>
