@@ -18,13 +18,13 @@ export const Sidebar = () => {
     <div
       className={clsx(
         // Mobile
-        `bg-woodsmoke fixed top-0 w-64 h-full flex flex-col border-r border-[#38383A] py-14 px-4 transition-all z-50`,
+        `bg-woodsmoke fixed top-0 w-64 h-full flex flex-col border-r border-[#38383A] px-4 py-7 md:py-8 2xl:py-10 transition-all z-50`,
         showMobileMenu ? "left-0" : "-left-full",
         // Destok
         `lg:left-0`
       )}
     >
-      <div className="flex items-center justify-center mb-14">
+      <div className="flex items-center justify-center mb-6 md:mb-8">
         <NavLink to="/" className="cursor-pointer">
           <LogoIcon />
         </NavLink>
@@ -39,8 +39,8 @@ export const Sidebar = () => {
                   to={link.path}
                   className="text-[#EBEBF5] opacity-60 flex items-center gap-4 hover:bg-[#202020] hover:text-white text-xl py-4 px-8 rounded-xl hover:opacity-100 fill-current"
                 >
-                  {link.icon}
-                  {link.name}
+                  <div>{link.icon}</div>
+                  <p>{link.name}</p>
                 </NavLink>
               </li>
             ))}
@@ -53,16 +53,16 @@ export const Sidebar = () => {
               <li key={link.id}>
                 <NavLink
                   to={link.path}
-                  className="text-[#EBEBF5] opacity-60 flex items-start gap-4 hover:bg-[#202020] hover:text-white text-xl py-4 px-8 rounded-xl hover:opacity-100 fill-current"
+                  className="text-[#EBEBF5] opacity-60 flex items-center gap-4 hover:bg-[#202020] hover:text-white text-xl py-4 px-8 rounded-xl hover:opacity-100 fill-current"
                 >
-                  {link.icon}
-                  {link.name}
+                  <div>{link.icon}</div>
+                  <p>{link.name}</p>
                 </NavLink>
               </li>
             ))}
             <NavLink
               to="/perfil"
-              className="text-[#EBEBF5] opacity-60 flex items-start gap-4 hover:bg-[#202020] hover:text-white py-4 px-8 rounded-xl hover:opacity-100 fill-current"
+              className="text-[#EBEBF5] opacity-60 flex items-center gap-4 hover:bg-[#202020] hover:text-white text-xl py-4 px-8 rounded-xl hover:opacity-100 fill-current"
             >
               <img src={profile} />
               <p className="text-xl">Tung Tran</p>
