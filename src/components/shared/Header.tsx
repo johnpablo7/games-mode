@@ -10,7 +10,7 @@ export const Header = () => {
       <nav className="order-1 md:order-none w-full lg:pl-5 2xl:pl-0">
         <ul className="flex items-center justify-self-start gap-3">
           {buttons.map((list) => (
-            <li key={list.id} className="">
+            <li key={list.id}>
               <NavLink
                 to={list.path}
                 className={({ isActive }) =>

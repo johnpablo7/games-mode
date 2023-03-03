@@ -34,12 +34,16 @@ export const Slide = () => {
                   {game.mode}
                 </p>
                 <div className="flex items-center gap-2">
-                  <span className="bg-[#B1DD8B] py-1 px-3 text-[#38571A] rounded-lg">
-                    {game.dsct}
-                  </span>
-                  <span className="text-[#EBEBF5] text-opacity-60 ">
-                    {game.pricesub}
-                  </span>
+                  {game.dsct && (
+                    <span className="bg-[#B1DD8B] py-1 px-3 text-[#38571A] rounded-lg">
+                      {game.dsct}
+                    </span>
+                  )}
+                  {game.pricesub && (
+                    <span className="text-[#EBEBF5] text-opacity-60 ">
+                      {game.pricesub}
+                    </span>
+                  )}
                   <span className="text-lg text-white">{game.price}</span>
                 </div>
               </div>
